@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #08130e;
+  color: #f3f8f4;
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+.sportiq-app {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 245px;
+  flex-shrink: 0;
+  background: #0d1b14;
+  border-right: 1px solid #263d2e;
+  padding: 27px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 5px 7px;
+}
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #173e29;
+  font-size: 24px;
+}
+.brand strong {
+  font-size: 19px;
+  letter-spacing: -0.6px;
+}
+.brand em {
+  font-style: normal;
+  color: #4ade80;
+}
+.brand small {
+  display: block;
+  color: #789484;
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  margin-top: 4px;
+}
+.sidebar-label,
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  color: #80a18d;
+  font-weight: 800;
+}
+.sidebar-label {
+  margin: 0 12px -17px;
+}
+.sidebar nav {
+  display: grid;
+  gap: 8px;
+}
+.nav-button {
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #a5b9ac;
+  border-radius: 10px;
+  padding: 13px 15px;
+  font-weight: 700;
+}
+.nav-button span {
+  margin-left: 10px;
+}
+.nav-button:hover,
+.nav-button.active {
+  background: #193b28;
+  color: #65e897;
+  border-color: #2c6945;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  background: #14291d;
+  border: 1px solid #2a4834;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+.sidebar-bottom small {
+  display: block;
+  color: #829d8c;
+  margin: 7px 0 0 14px;
+}
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  margin-right: 6px;
+}
+.content {
+  width: 100%;
+  min-width: 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 38px 44px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 34px;
+}
+h1 {
+  font-size: 35px;
+  margin: 8px 0 5px;
+  letter-spacing: -1.2px;
+}
+h2 {
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+h3 {
+  font-size: 18px;
+  margin: 22px 0;
+}
+.subtitle {
+  color: #95ab9b;
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+.demo-pill {
+  background: #183b29;
+  color: #73e99e;
+  border: 1px solid #315b3f;
+  border-radius: 50px;
+  padding: 10px 13px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.stack {
+  display: grid;
+  gap: 24px;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.metric {
+  background: #13241b;
+  border: 1px solid #284334;
+  border-radius: 16px;
+  padding: 23px;
+}
+.metric small,
+.metric span {
+  display: block;
+  color: #96ab9c;
+  font-size: 12px;
+}
+.metric strong {
+  display: block;
+  color: #f4fff6;
+  font-size: 35px;
+  margin: 11px 0;
+  font-weight: 800;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.section-head h2 {
+  margin: 0;
+}
+.section-head span {
+  color: #829b8a;
+  font-size: 12px;
+}
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.panel {
+  background: #13241b;
+  border: 1px solid #284334;
+  border-radius: 18px;
+  padding: 23px;
+}
+.match-card h3 {
+  line-height: 1.6;
+}
+.vs {
+  color: #7d9c87;
+  font-size: 12px;
+  margin: 0 5px;
+}
+.stat-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  margin: 15px 0 9px;
+}
+.stat-line span {
+  color: #8ea794;
+}
+.bar {
+  background: #43574a;
+  border-radius: 50px;
+  height: 8px;
+  overflow: hidden;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  background: #4ade80;
+  border-radius: 50px;
+}
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.welcome h2 {
+  margin-top: 10px;
+}
+.welcome p {
+  color: #9eb3a5;
+  line-height: 1.6;
+  max-width: 650px;
+}
+.primary {
+  background: #4ade80;
+  color: #092014;
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 18px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.primary:hover {
+  background: #81f4a8;
+}
+.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.field-label {
+  display: block;
+  margin: 23px 0 8px;
+  color: #a8bcae;
+  font-size: 13px;
+}
+.field {
+  background: #0b1a12;
+  color: white;
+  border: 1px solid #3a5b43;
+  border-radius: 10px;
+  padding: 13px;
+  width: 100%;
+  outline: none;
+}
+.field:focus {
+  border-color: #4ade80;
+}
+.league-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+  margin-top: 22px;
+}
+.league-item {
+  background: #172d20;
+  color: #e9f8ed;
+  border: 1px solid #2b4935;
+  border-radius: 10px;
+  text-align: left;
+  padding: 16px;
+}
+.league-item span {
+  float: right;
+}
+.league-item.chosen,
+.league-item:hover {
+  border-color: #4ade80;
+  background: #1d3e2a;
+}
+.selection {
+  margin-top: 24px;
+  background: #0d2116;
+  border: 1px solid #2c4d35;
+  border-radius: 12px;
+  padding: 17px;
+  color: #a4b8aa;
+}
+.selection strong {
+  color: #65e897;
+}
+.selection p {
+  margin: 9px 0 0;
+  font-size: 13px;
+}
+.player-metrics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 24px;
+}
+.player-metrics .metric {
+  background: #0e1d15;
+}
+.chat-panel {
+  max-width: 850px;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 270px;
+  max-height: 450px;
+  overflow: auto;
+  margin: 22px 0;
+  padding: 16px;
+  background: #0a1b11;
+  border-radius: 14px;
+}
+.bubble {
+  padding: 13px 16px;
+  border-radius: 14px;
+  max-width: 85%;
+  font-size: 14px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+.bubble.assistant {
+  align-self: flex-start;
+  background: #203d2a;
+  color: #e0f5e6;
+}
+.bubble.user {
+  align-self: flex-end;
+  background: #346f49;
+  color: white;
+}
+.chat-form {
+  display: flex;
+  gap: 10px;
+}
+.footer {
+  font-size: 12px;
+  color: #7f9b88;
+  margin-top: 38px;
+}
+@media (max-width: 1050px) {
+  .match-grid {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    padding: 30px 24px;
+  }
+  .player-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 680px) {
+  .sportiq-app {
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 14px;
+    gap: 14px;
+  }
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-button {
+    width: auto;
+    padding: 9px;
+  }
+  .sidebar-label,
+  .sidebar-bottom {
+    display: none;
+  }
+  .content {
+    padding: 23px 14px;
+  }
+  .topbar {
+    flex-direction: column;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .league-grid {
+    grid-template-columns: 1fr;
+  }
+  .welcome {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .chat-form {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 29px;
+  }
+}
